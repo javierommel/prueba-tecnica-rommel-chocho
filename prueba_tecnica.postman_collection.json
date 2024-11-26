@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "635e19be-f8fb-49b5-8391-0f626d1a09f0",
+		"name": "prueba_tecnica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34407453"
+	},
+	"item": [
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/clientes"
+					},
+					"response": []
+				},
+				{
+					"name": "create cliente1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contrasena\": \"1234\",\n    \"estado\": true,\n    \"nombre\": \"Jose Lema\",\n    \"genero\": \"Masculino\",\n    \"edad\": 30,\n    \"identificacion\": \"098254785\",\n    \"direccion\": \"Otavalo sn y principal\",\n    \"telefono\": \"098254785\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/clientes"
+					},
+					"response": []
+				},
+				{
+					"name": "create cliente2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contrasena\": \"5678\",\n    \"estado\": true,\n    \"nombre\": \"Marianela Montalvo\",\n    \"genero\": \"Femenino\",\n    \"edad\": 28,\n    \"identificacion\": \"097548965\",\n    \"direccion\": \"Amazonas y NNUU\",\n    \"telefono\": \"097548965\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/clientes"
+					},
+					"response": []
+				},
+				{
+					"name": "create cliente3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contrasena\": \"1245\",\n    \"estado\": true,\n    \"nombre\": \"Juan Osorio\",\n    \"genero\": \"Masculino\",\n    \"edad\": 43,\n    \"identificacion\": \"098874587\",\n    \"direccion\": \"13 junio y Equinoccial\",\n    \"telefono\": \"098874587\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/clientes"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cuenta",
+			"item": [
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8082/cuentas"
+					},
+					"response": []
+				},
+				{
+					"name": "create cuenta1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numeroCuenta\":\"478758\",\n    \"tipo\":\"Ahorros\",\n    \"saldoInicial\":2000.00,\n    \"estado\":true,\n    \"clienteId\":\"CLI-1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8082/cuentas"
+					},
+					"response": []
+				},
+				{
+					"name": "create cuenta2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numeroCuenta\":\"225487\",\n    \"tipo\":\"Corriente\",\n    \"saldoInicial\":100.00,\n    \"estado\":true,\n    \"clienteId\":\"CLI-2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8082/cuentas"
+					},
+					"response": []
+				},
+				{
+					"name": "create cuenta3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numeroCuenta\":\"495878\",\n    \"tipo\":\"Ahorros\",\n    \"saldoInicial\":0.00,\n    \"estado\":true,\n    \"clienteId\":\"CLI-3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8082/cuentas"
+					},
+					"response": []
+				},
+				{
+					"name": "create cuenta4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numeroCuenta\":\"496825\",\n    \"tipo\":\"Ahorros\",\n    \"saldoInicial\":540.00,\n    \"estado\":true,\n    \"clienteId\":\"CLI-2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8082/cuentas"
+					},
+					"response": []
+				},
+				{
+					"name": "create cuenta5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numeroCuenta\":\"585545\",\n    \"tipo\":\"Corriente\",\n    \"saldoInicial\":1000.00,\n    \"estado\":true,\n    \"clienteId\":\"CLI-1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8082/cuentas"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimiento",
+			"item": [
+				{
+					"name": "create movimiento1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numeroCuenta\":\"585545\",\n    \"tipoMovimiento\":\"Retiro\",\n    \"valor\":-575\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8082/movimientos"
+					},
+					"response": []
+				},
+				{
+					"name": "create movimiento2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numeroCuenta\":\"225487\",\n    \"tipoMovimiento\":\"Deposito\",\n    \"valor\":600\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8082/movimientos"
+					},
+					"response": []
+				},
+				{
+					"name": "create movimiento3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numeroCuenta\":\"495878\",\n    \"tipoMovimiento\":\"Deposito\",\n    \"valor\":150\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8082/movimientos"
+					},
+					"response": []
+				},
+				{
+					"name": "create movimiento4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numeroCuenta\":\"496825\",\n    \"tipoMovimiento\":\"Retiro\",\n    \"valor\":-540\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8082/movimientos"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reporte",
+			"item": [
+				{
+					"name": "reportemovimientos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/reportes?fechaInicio=2024-11-24&fechaFin=2024-11-26&clienteId=CLI-2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"reportes"
+							],
+							"query": [
+								{
+									"key": "fechaInicio",
+									"value": "2024-11-24"
+								},
+								{
+									"key": "fechaFin",
+									"value": "2024-11-26"
+								},
+								{
+									"key": "clienteId",
+									"value": "CLI-2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
